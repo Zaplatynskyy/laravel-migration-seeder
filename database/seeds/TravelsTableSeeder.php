@@ -21,8 +21,7 @@ class TravelsTableSeeder extends Seeder
             $travel->departure = $faker->date();
             $travel->arrival = $faker->date();
             $travel->price = $faker->randomFloat(2, 99, 999999);
-            $travel->text = $faker->paragraph();
-            $travel->overnight_stay = $faker->numberBetween(0, 1);
+            $travel->description = $faker->paragraph();
             $travel->save();
         }
     }
